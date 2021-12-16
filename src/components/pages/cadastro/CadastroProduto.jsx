@@ -90,7 +90,7 @@ function CadastroProduto() {
       <div className="cadastro-produto-wrapper">
         <h2>Cadastro de Produtos</h2>
 
-        <Form onSubmit={handleOnclick}>
+        <Form onSubmit={handleOnclick} validated={isValid}>
           <Form.Group>
             <Form.Label> Nome do Produto </Form.Label>
             <Form.Control

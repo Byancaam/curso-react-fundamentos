@@ -78,7 +78,7 @@ function CadastroUsuario() {
 
   const doPost = async usuario => {
     console.log(usuario);
-    await fetch("http://localhost:5000/usuarios", {
+    await fetch("http://localhost:5000/camerausuarios", {
       method: "POST", // salvar recurso
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(usuario)

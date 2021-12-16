@@ -8,7 +8,7 @@ function Home() {
     return ( 
         <div className="home">
             <h1>
-                Bem vindo a aplicação de Cadastro de Alunos
+                Bem vindo a aplicação de Cadastro de Produtos
             </h1>
             <p><Button onClick={ctx.onLogin}>Login</Button></p>
         </div>
