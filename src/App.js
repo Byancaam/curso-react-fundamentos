@@ -1,25 +1,19 @@
 import React from "react";
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Container } from "react-bootstrap";
+import Rotas from "./components/routes/Routes";
+import "./App.css";
 
-import ListagemDeProdutos from "./components/ListagemDeProdutos";
-import Login from "./components/Login";
-import Carrinho from "./components/Carrinho";
-import Header from "./Header";
-import Home from "./components/Home";
+// Telas
+import Header from "./components/header/Header";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/listaprodutos" element={<ListagemDeProdutos />} />
-          <Route path="/carrinho" element={<Carrinho />} />
-        </Routes>
-      </BrowserRouter>
+      <Container>
+        <Rotas />
+      </Container>
     </div>
   );
 }
