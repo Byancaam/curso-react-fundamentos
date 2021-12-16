@@ -98,7 +98,7 @@ function CadastroUsuario() {
               onChange={nomeChangeHandle}
               type="text"
               value={nome}
-              placeholder="Nome"
+              placeholder="Digite o seu Nome"
             />
           </Form.Group>
 
@@ -109,7 +109,7 @@ function CadastroUsuario() {
               onChange={emailChangeHandle}
               type="email"
               value={email}
-              placeholder="Email"
+              placeholder="Digite o seu Email"
             />
           </Form.Group>
 
@@ -120,7 +120,7 @@ function CadastroUsuario() {
               onChange={userNameChangeHandle}
               type="text"
               value={username}
-              placeholder="User Name"
+              placeholder="Digite o seu nome de usuário"
             />
           </Form.Group>
 
@@ -131,7 +131,7 @@ function CadastroUsuario() {
               onChange={senhaChangeHandle}
               type="password"
               value={senha}
-              placeholder="Password"
+              placeholder="Digite a sua senha"
             />
           </Form.Group>
 

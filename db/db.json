@@ -8,11 +8,27 @@
       "password": "12345"
     },
     {
-      "id": 3,
+      "id": 2,
       "nome": "blue",
       "email": "blue@email",
       "username": "blue",
       "senha": "1234"
+    }
+  ],
+  "produtos": [
+    {
+      "id": 1,
+      "nome": "Perfume",
+      "preco": 215.99,
+      "imagem": "ulr imagem",
+      "descricao": " Perfume de luxo só para quem tem muita grana"
+    },
+    {
+      "id": 2,
+      "nome": "Sabonete",
+      "preco": "25",
+      "imagem": "https://unsplash.com/photos/DlZD4V2j9oM",
+      "descricao": "Sabonete de pepino, vegano"
     }
   ]
 }

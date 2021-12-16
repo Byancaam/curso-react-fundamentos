@@ -3,7 +3,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 
 import Login from "../pages/login/Login";
 import ListaProdutos from "../pages/produtos/ListaProdutos";
-import CadastroProdutos from "../pages/cadastro/CadastroProdutos";
+import CadastroProdutos from "../pages/cadastro/CadastroProduto";
 import CadastroUsuario from "../pages/usuarios/CadastroUsuario";
 
 const Rotas = () => (

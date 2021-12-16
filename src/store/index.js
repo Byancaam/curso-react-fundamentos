@@ -1,7 +1,7 @@
 import { createStore } from 'redux';
 
 //Login Reducer function
-const loginReducer = (state = {isLoggedIn: false}, action) => {
+const loginReducer = (state = {isLoggedIn: true}, action) => {
 
     //Login
     if(action.type === 'login'){
