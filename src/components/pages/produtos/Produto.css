@@ -1,0 +1,8 @@
+.produto-card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.produto-card-footer input {
+  width: 80px;
+}

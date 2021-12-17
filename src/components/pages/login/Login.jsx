@@ -16,14 +16,14 @@ function Login() {
   const navigate = useNavigate();
 
   const emailChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setEmail(event.target.value);
   };
 
   const senhaChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setSenha(event.target.value);
@@ -32,12 +32,12 @@ function Login() {
   const handleOnclick = event => {
     event.preventDefault();
 
-    if (email.trim().legth <= 0) {
+    if (email.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (senha.trim().legth <= 0) {
+    if (senha.trim().length <= 0) {
       setIsValid(false);
       return;
     }
@@ -65,9 +65,7 @@ function Login() {
   };
 
   const handleLogin = usuario => {
-    console.log(usuario);
     if (usuario && usuario.length > 0) {
-      console.log("merda");
       if (usuario[0].senha === senha) {
         dispatch({ type: "login" });
         sessionStorage.setItem('user', JSON.stringify(usuario));

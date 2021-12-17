@@ -11,28 +11,28 @@ function CadastroUsuario() {
   const [isValid, setIsValid] = useState(false);
 
   const nomeChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setNome(event.target.value);
   };
 
   const emailChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setEmail(event.target.value);
   };
 
   const userNameChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setUsername(event.target.value);
   };
 
   const senhaChangeHandle = event => {
-    if (event.target.value.trim().legth > 0) {
+    if (event.target.value.trim().length > 0) {
       setIsValid(true);
     }
     setSenha(event.target.value);
@@ -42,22 +42,22 @@ function CadastroUsuario() {
     event.preventDefault();
 
     //validação dos dados
-    if (nome.trim().legth <= 0) {
+    if (nome.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (email.trim().legth <= 0) {
+    if (email.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (username.trim().legth <= 0) {
+    if (username.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (senha.trim().legth <= 0) {
+    if (senha.trim().length <= 0) {
       setIsValid(false);
       return;
     }

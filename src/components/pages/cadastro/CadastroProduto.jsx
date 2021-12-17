@@ -14,7 +14,6 @@ function CadastroProduto() {
     if(event.target.value.trim().length > 0){
       setIsValid(true);
     }
-    console.log(event.target.value);
     setNome(event.target.value);
   };
 
@@ -22,7 +21,6 @@ function CadastroProduto() {
     if(event.target.value.trim().length > 0){
       setIsValid(true);
     }
-    console.log(event.target.value);
     setPreco(event.target.value);
   };
 
@@ -30,7 +28,6 @@ function CadastroProduto() {
     if(event.target.value.trim().length > 0){
       setIsValid(true);
     }
-    console.log(event.target.value);
     setImagem(event.target.value);
   };
 
@@ -38,7 +35,6 @@ function CadastroProduto() {
     if(event.target.value.trim().length > 0){
       setIsValid(true);
     }
-    console.log(event.target.value);
     setDescricao(event.target.value);
   };
 
@@ -46,22 +42,22 @@ function CadastroProduto() {
     event.preventDefault();
 
     //validação dos dados
-    if (nome.trim().legth <= 0) {
+    if (nome.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (preco.trim().legth <= 0) {
+    if (preco.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (imagem.trim().legth <= 0) {
+    if (imagem.trim().length <= 0) {
       setIsValid(false);
       return;
     }
 
-    if (descricao.trim().legth <= 0) {
+    if (descricao.trim().length <= 0) {
       setIsValid(false);
       return;
     }
