@@ -1,0 +1,26 @@
+.pedido-dados-produtos {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.pedido-dados-produtos .pedido-dados-produtos-nome {
+  font-weight: bold;
+}
+
+.pedido-dados-produtos .pedido-dados-produtos-quantidade {
+  color: rgb(139, 125, 125);
+}
+
+.pedido-dados-produtos .pedido-dados-produtos-preco {
+  font-weight: bold;
+}
+
+.card-pedido {
+  margin-bottom: 16px;
+}
+
+.pedido-total{
+  margin-right: 10px;
+}

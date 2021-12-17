@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./ListaProdutos.css";
+import { Container, Col, Row } from "react-bootstrap";
 import Produto from "./Produto";
 
 function ListaProdutos() {
@@ -19,19 +20,25 @@ function ListaProdutos() {
   };
 
   return (
-    <div className="lista-produtos">
-      <h2>Nossos produtos</h2>
+    <Container>
       <div>
-        {produtos && produtos.map(produto => (
-          <Produto
-            path="/"
-            key={produto.id}
-            index={produto.id}
-            produto={produto}
-          />
-        ))} 
+        <h2>Nossos produtos</h2>
+        <input className="busca" type="search" placeholder="Procurar produtos"></input>
+        <Row className="lista-produtos">
+          {produtos &&
+            produtos.map(produto => (
+              <Col xs={4}>
+                <Produto
+                  path="/"
+                  key={produto.id}
+                  index={produto.id}
+                  produto={produto}
+                />
+              </Col>
+            ))}
+        </Row>
       </div>
-    </div>
+    </Container>
   );
 }
 

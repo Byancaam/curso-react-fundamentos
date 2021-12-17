@@ -28,7 +28,54 @@
       "nome": "Sabonete",
       "preco": "25",
       "imagem": "https://unsplash.com/photos/DlZD4V2j9oM",
-      "descricao": "Sabonete de pepino, vegano"
+      "descricao": "Sabonete de pepino, vegano e cruelt-free"
+    },
+    {
+      "id": 3,
+      "nome": "Bandeja",
+      "preco": "45",
+      "imagem": "https://unsplash.com/photos/07NDEeH3lR4",
+      "descricao": "Bandeja em madeira para café da manhã"
+    }
+  ],
+  "pedidos": [
+    {
+      "id": 1,
+      "idUsuario" : 1,
+      "produtosPedidos": [{
+        "id": 3,
+        "nome": "Bandeja",
+        "preco": "45",
+        "imagem": "https://unsplash.com/photos/07NDEeH3lR4",
+        "descricao": "Bandeja em madeira para café da manhã",
+        "quantidade" : 1
+      }],
+      "total" : 45,
+      "status": ""
+    },
+    {
+      "id": 2,
+      "idUsuario" : 1,
+      "produtosPedidos": [
+        {
+        "id": 3,
+        "nome": "Sabonete",
+        "preco": "2",
+        "imagem": "https://unsplash.com/photos/07NDEeH3lR4",
+        "descricao": "Bandeja em madeira para café da manhã",
+        "quantidade" : 1
+      },
+      {
+        "id": 3,
+        "nome": "Shampoo",
+        "preco": "15",
+        "imagem": "https://unsplash.com/photos/07NDEeH3lR4",
+        "descricao": "Bandeja em madeira para café da manhã",
+        "quantidade" : 3
+      }
+    ],
+      "total" : 47,
+      "status": "Pago"
     }
   ]
 }

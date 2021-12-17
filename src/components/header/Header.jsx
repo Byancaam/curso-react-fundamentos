@@ -19,7 +19,9 @@ function Header() {
                     <Nav.Link as={Link} to="/">Home</Nav.Link>
                     {!isLoggedIn && <Nav.Link as={Link} to="/cadastro/usuarios" >Cadastre-se</Nav.Link>}
                     {isLoggedIn && <Nav.Link as={Link} to="/cadastro/produtos" >Cadastrar Produtos</Nav.Link>}
-                    {isLoggedIn && <Nav.Link as={Link} to="/" >Logout</Nav.Link>}
+                    {isLoggedIn && <Nav.Link as={Link} to="/pedidos" >Lista de Pedidos</Nav.Link>}
+                    {!isLoggedIn && <Nav.Link as={Link} to="/carrinho" >Carrinho</Nav.Link>}
+                    {!isLoggedIn && <Nav.Link as={Link} to="/" >Logout</Nav.Link>}
                 </Nav>
             </Navbar.Collapse>
         </Container>
