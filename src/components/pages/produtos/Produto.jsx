@@ -18,7 +18,7 @@ function Produto({ produto }) {
           <Card.Text>{produto.descricao}</Card.Text>
 
           <Link className="details_button" to={`/${produto.id}`}>
-            <Button variant="primary"> Ver Detalhes </Button>
+            <Button variant="primary"> Comprar </Button>
           </Link>
         </Card.Body>
       </Card>

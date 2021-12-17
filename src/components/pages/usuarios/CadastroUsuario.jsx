@@ -14,7 +14,6 @@ function CadastroUsuario() {
     if (event.target.value.trim().legth > 0) {
       setIsValid(true);
     }
-    console.log(event.target.value);
     setNome(event.target.value);
   };
 
@@ -22,7 +21,6 @@ function CadastroUsuario() {
     if (event.target.value.trim().legth > 0) {
       setIsValid(true);
     }
-    console.log(event.target.value);
     setEmail(event.target.value);
   };
 
@@ -30,7 +28,6 @@ function CadastroUsuario() {
     if (event.target.value.trim().legth > 0) {
       setIsValid(true);
     }
-    console.log(event.target.value);
     setUsername(event.target.value);
   };
 
@@ -38,7 +35,6 @@ function CadastroUsuario() {
     if (event.target.value.trim().legth > 0) {
       setIsValid(true);
     }
-    console.log(event.target.value);
     setSenha(event.target.value);
   };
 
@@ -77,8 +73,7 @@ function CadastroUsuario() {
   };
 
   const doPost = async usuario => {
-    console.log(usuario);
-    await fetch("http://localhost:5000/camerausuarios", {
+    await fetch("http://localhost:5000/usuarios", {
       method: "POST", // salvar recurso
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(usuario)

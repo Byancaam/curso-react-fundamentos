@@ -15,7 +15,6 @@ function ListaPedidos() {
       method: "GET" // consultar recurso
     });
     const data = await response.json();
-    console.log(data);
     setPedidos(data);
   };
   return (

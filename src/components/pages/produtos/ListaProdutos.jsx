@@ -29,9 +29,7 @@ function ListaProdutos() {
             produtos.map(produto => (
               <Col xs={4}>
                 <Produto
-                  path="/"
                   key={produto.id}
-                  index={produto.id}
                   produto={produto}
                 />
               </Col>
